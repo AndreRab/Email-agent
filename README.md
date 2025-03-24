@@ -1,4 +1,4 @@
-# Email-agent 🤖🤖🤖
+# ✉️ Email-agent ✉️
 
 Email-agent is an agent that helps you navigate through your emails using the Telegram Bot API. You can ask for unread messages, mark them as read, and see a short message overview for each user. Additionally, you can request specific help from the agent when you need to handle your responses quickly.
 
@@ -36,3 +36,24 @@ cd Email-agent
 ```bash 
    docker-compose -up
 ```
+
+## Bot Features 
+<img width="467" alt="image" src="https://github.com/user-attachments/assets/f446995e-377b-451e-93ee-ef4104c60345" />
+
+The bot provides 6 features. To use any of them, you need to log in first. The bot will prompt you to follow a login link:
+
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/d77b962e-3476-4126-b3bd-4622e864b5b7" />
+
+Follow the instructions at the provided link. Once you complete the login process, you can return to Telegram when you see the following message:
+
+<img width="367" alt="image" src="https://github.com/user-attachments/assets/e77ab544-e003-497f-a950-f407a7e7b0c7" />
+
+To ask the agent to process your prompt, use the /agent_invoke command followed by your input:
+
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/cbc36e93-84f5-44a0-8748-4248599f2979" />
+
+
+
+
+
