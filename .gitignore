@@ -2,3 +2,4 @@ agent/.env
 gmail_api/.env
 telegram_bot/.env
 gmail_api/credentials.json
+.DS_Store
