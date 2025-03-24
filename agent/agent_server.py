@@ -20,11 +20,15 @@ def get_messages_from_sender(email, chat_id):
     request_url = f"{GMAIL_API_DOCKER_URL}{SENDER_PATH}{chat_id}/{email}/{10}"
     response = requests.get(request_url)  
     emails = response.json()
+    if response.status_code != 200 or not response.content.strip():
+        return {}
     return compose_emails(emails)
 
 def get_unread(chat_id):
     request_url = f"{GMAIL_API_DOCKER_URL}{UNREAD_PATH}{chat_id}"
     response = requests.get(request_url)
+    if response.status_code != 200 or not response.content.strip():
+        return {}
     return response.json()  
 
 @app.route(AGENT_REQUEST_PATH)

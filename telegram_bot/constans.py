@@ -1,9 +1,9 @@
-GMAIL_API_URL = "http://localhost:5000"
-GMAIL_API_DOCKER_URL = "http://gmail_service:5000"
+GMAIL_API_URL = "http://localhost:1000"
+GMAIL_API_DOCKER_URL = "http://gmail_service:1000"
 # GMAIL_API_DOCKER_URL = GMAIL_API_URL
 AGENT_API_URL = "http://localhost:6000"
-AGENT_API_DOCKER_URL = AGENT_API_URL
 AGENT_API_DOCKER_URL = "http://agent:6000"
+# AGENT_API_DOCKER_URL = AGENT_API_URL
 LOGIN_PATH = "/oauth/login/"
 UNREAD_PATH = '/emails/'
 SENDER_PATH = "/emails/from/"

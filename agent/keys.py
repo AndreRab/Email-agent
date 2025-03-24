@@ -1,4 +1,8 @@
-BASE_MODEL_URL = "https://openrouter.ai/api/v1"
-MODEL_NAME = "deepseek/deepseek-r1-distill-llama-70b:free"
-# Paste your model key
-MODEL_API_KEY= ""  
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+BASE_MODEL_URL = os.getenv("BASE_MODEL_URL")
+MODEL_NAME = os.getenv("MODEL_NAME")
+MODEL_API_KEY = os.getenv("MODEL_API_KEY")

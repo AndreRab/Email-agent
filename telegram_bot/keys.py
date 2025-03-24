@@ -1,3 +1,6 @@
-CLIENT_SECRETS_FILE = "credentiaals.json"
-# "paste your bot token id"
-TELEGRAM_BOT_TOKEN = "" 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")

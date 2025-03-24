@@ -1,5 +1,5 @@
-GMAIL_API_URL = "http://localhost:5000"
-GMAIL_API_DOCKER_URL = "http://gmail_service:5000"
+GMAIL_API_URL = "http://localhost:1000"
+GMAIL_API_DOCKER_URL = "http://gmail_service:1000"
 # GMAIL_API_DOCKER_URL = GMAIL_API_URL
 
 REGEX_FOR_ACTION = r'"action"\s*:\s*"([^"]+)"'
@@ -16,5 +16,5 @@ DEFAULT_SNIPPET_TEXT = "No preview available"
 
 BOT_MESSAGE_TEMPLATE = lambda sender, subject, snippet: f"📩 *New Email*\n👤 *From:* {sender}\n✉️ *Subject:* {subject}\n🔍 *Preview:* {snippet[:200]}"
 
-final_answer = lambda answer: answer
-default_action = lambda : 'something went wrong, format your action properly'
+final_answer = lambda answer, chat_id=None: answer
+default_action = lambda chat_id=None : 'something went wrong, format your action properly'

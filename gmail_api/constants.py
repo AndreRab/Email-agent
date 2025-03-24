@@ -5,7 +5,7 @@ SCOPES = [
     "https://www.googleapis.com/auth/gmail.readonly"
 ]
 
-REDIRECT_URI = "http://localhost:5000/oauth/callback"
+REDIRECT_URI = "http://localhost:1000/oauth/callback"
 
 LOGIN_PATH = "/oauth/login/<chat_id>"
 REDIRECT_PATH = "/oauth/callback"

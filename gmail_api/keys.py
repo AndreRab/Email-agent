@@ -1,3 +1,7 @@
-#paste your applcation key (generate randomly)
-APPLICATION_KEY = ""
-CLIENT_SECRETS_FILE = "credentials.json"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+APPLICATION_KEY = os.getenv("APPLICATION_KEY")
+CLIENT_SECRETS_FILE = os.getenv("CLIENT_SECRETS_FILE")
