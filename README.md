@@ -1,5 +1,10 @@
 # ✉️ Email-agent ✉️
 
+![Python Flask](https://img.shields.io/badge/Python-Flask-blue)
+![OpenAI](https://img.shields.io/badge/PyTorch-2.1.1-red)
+![Telebot](https://img.shields.io/badge/Torchvision-0.16.1-orange)
+![Issues](https://img.shields.io/github/issues/AndreRab/Email-agent)
+
 Email-agent is an agent that helps you navigate through your emails using the Telegram Bot API. You can ask for unread messages, mark them as read, and see a short message overview for each user. Additionally, you can request specific help from the agent when you need to find something in your emails quickly.
 
 ## Application Setup
